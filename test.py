@@ -1,16 +1,14 @@
-def soma():
-    a = int(input())
-    b = int(input())
-    return a + b
+def somar():
+    return a - b
 
 def multiplicar():
-    a = int(input())
-    b = int(input())
     return a * b
 
 operador = int(input("escolha: "))
+a = int(input("num 1: "))
+b = int(input("num 2: "))
 
 if operador == 1:
-    print(soma())
+    print(somar())
 elif operador == 2:
     print(multiplicar())

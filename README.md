@@ -37,19 +37,19 @@ Irei ressaltar alguns comandos importantes que serão muito usados ao decorrer d
 -------
 # Comandos básicos
 
-git init: Inicia um novo repositório Git na sua pasta.
+* git init: Inicia um novo repositório Git na sua pasta.
 
-git status: Mostra o estado dos seus arquivos (modificados, adicionados, etc.).
+* git status: Mostra o estado dos seus arquivos (modificados, adicionados, etc.).
 
-git add .: Adiciona todos os arquivos modificados para a área de preparação.
+* git add .: Adiciona todos os arquivos modificados para a área de preparação.
 
-git commit -m "mensagem": Salva as alterações adicionadas como um ponto no histórico.
+* git commit -m "mensagem": Salva as alterações adicionadas como um ponto no histórico.
 
-git push: Envia os commits da sua máquina para o GitHub.
+* git push: Envia os commits da sua máquina para o GitHub.
 
-git pull: Baixa e mescla as últimas alterações do GitHub para sua máquina.
+* git pull: Baixa e mescla as últimas alterações do GitHub para sua máquina.
 
-git clone [URL]: Cria uma cópia local de um repositório online.
+* git clone [URL]: Cria uma cópia local de um repositório online.
 
 -------
 # Branch
@@ -59,12 +59,17 @@ branch → uma linha de desenvolvimento paralela (ex: main, dev, feature/nova-fu
 
 outros comando relacionados a branch:
 
-git branch                   -> lista branches
-git checkout nome-branch     -> muda para uma branch
-git checkout -b nova-branch  -> cria e entra na nova branch
-git switch nome-branch       -> muda para uma branch (mais seguro que checkout)            
-git merge nome-branch        -> junta outra branch à atual
-git branch -d nome-branch    -> apaga branch local
+* git branch                   -> lista branches
+
+* git checkout nome-branch     -> muda para uma branch
+
+* git checkout -b nova-branch  -> cria e entra na nova branch
+
+* git switch nome-branch       -> muda para uma branch (mais seguro que checkout) 
+
+* git merge nome-branch        -> junta outra branch à atual
+
+* git branch -d nome-branch    -> apaga branch local
 -------
 # Sincronização
 
@@ -73,8 +78,9 @@ Ao decorrer do projeto ocorrerão varias atualizações. Dessa forma, esse coman
 
 comandos: 
 
-git pull origin main         # baixa alterações da main
-git push origin nome-branch  # envia alterações
+* git pull origin main         -> baixa alterações da main
+
+* git push origin nome-branch  -> envia alterações
 
 git fetch ->baixa as últimas alterações de um repositório remoto sem integrá-las ao seu código local.
 (funciona como um preview)
@@ -86,20 +92,26 @@ Usado para quando mandar algo errado ou salvar algo que pode ser usado depois
 
 comandos:
 
-git reset --soft HEAD~1    # desfaz último commit mantendo arquivos
-git reset --hard HEAD~1    # desfaz commit e alterações 
-git stash                  # guarda alterações temporariamente
-git stash pop              # recupera alterações guardadas
+* git reset --soft HEAD~1    -> desfaz último commit mantendo arquivos
+
+* git reset --hard HEAD~1    -> desfaz commit e alterações 
+
+* git stash                  -> guarda alterações temporariamente
+
+* git stash pop              -> recupera alterações guardadas
 
 ---------
 # Status e histórico
 
 -> usei desses comandos para verificar se os arquivos que eu queria estavam sendo usados (pelo git add) e no final poderia ter usado para ver o histórico de commits e ver o que ja foi implementado.
 
-git status                 # mostra arquivos alterados
-git log                    # mostra histórico de commits (ver o que o outro fez)
-git diff                   # mostra diferenças nos arquivos
-git rebase                 # reorganiza o histórico de commits
+* git status                 -> mostra arquivos alterados
+
+* git log                    -> mostra histórico de commits (ver o que o outro fez)
+
+* git diff                   -> mostra diferenças nos arquivos
+
+* git rebase                 -> reorganiza o histórico de commits
 
 -------
 # Git Hub
